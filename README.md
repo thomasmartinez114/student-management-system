@@ -1,6 +1,6 @@
 - [ ] Ask user how many new students will be added to DB
-- [ ] User should be prompted to enter the name and year for each student
-- [ ] Student should have 5-digit unique ID, with first number being their grade level
+- [x] User should be prompted to enter the name and year for each student
+- [x] Student should have 5-digit unique ID, with first number being their grade level
 - [ ] Student can enroll in following courses: 
 	- [ ] History 101
 	- [ ] Mathematics 101

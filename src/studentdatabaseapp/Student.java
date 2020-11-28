@@ -64,13 +64,22 @@ public class Student {
     // Pay tuition
     public void payTuition(){
         viewBalance();
-        System.out.print("Enter your payment: $");
-        Scanner in = new Scanner(System.in);
-        int payment = in.nextInt();
 
-        if (payment != 0) {
-            tuitionBalance -= payment;
-            System.out.println("Thank you for your payment of $" + payment);
+        // Ask if they would like to make a payment
+        System.out.println("Would you like to make a payment now?\n 1 - Yes\n 2 - No");
+        Scanner in = new Scanner(System.in);
+        int paymentConfirmation = in.nextInt();
+
+        if (paymentConfirmation == 1) {
+            System.out.print("Enter your payment: $");
+            int payment = in.nextInt();
+
+            if (payment > 0) {
+                tuitionBalance -= payment;
+                System.out.println("Thank you for your payment of $" + payment);
+            } else {
+                System.out.println("Sorry, payment needs to be greater than $0!");
+            }
         }
         else {
             System.out.println("No payment made at this time. Thank you.");

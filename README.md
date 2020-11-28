@@ -10,3 +10,4 @@
 - [ ] Each course cost $600 to enroll 
 - [ ] Student should be able to view their balance and pay tuition
 - [ ] To see the status of the student, we should see their name, ID, courses enrolled and balance
+- [ ] User input for if they want to make a payment 1 yes 2 no

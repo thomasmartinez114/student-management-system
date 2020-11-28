@@ -29,8 +29,6 @@ public class Student {
         this.gradeYear = in.nextInt();
 
         setStudentID();
-
-        System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentID);
     }
 
     // Generate an 5 digit ID
@@ -56,8 +54,6 @@ public class Student {
                 break;
             }
         } while (1 != 0);
-
-        System.out.println("ENROLLED IN: " + courses);
     }
 
     // View balance
@@ -80,6 +76,8 @@ public class Student {
     // Show status
     public String showInfo() {
         return "Name: " + firstName + " " + lastName +
+                "\nGrade Level: " + gradeYear +
+                "\nStudent ID: " + studentID +
                 "\nCourses Enrolled: " + courses +
                 "\nBalance: $" + tuitionBalance;
     }

@@ -75,7 +75,6 @@ public class Student {
         else {
             System.out.println("No payment made at this time. Thank you.");
         }
-        viewBalance();
     }
 
     // Show status
